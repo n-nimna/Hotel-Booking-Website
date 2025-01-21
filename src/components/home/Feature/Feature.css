@@ -1,0 +1,68 @@
+/* Features.css */
+
+.features-container {
+    padding: 2rem 0;
+  }
+  
+  .feature-card {
+    transition: all 0.3s ease;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-icon {
+    transition: all 0.3s ease;
+  }
+  
+  .feature-card:hover .feature-icon {
+    transform: scale(1.1);
+    color: #347EBF; /* sky-500 color */
+  }
+  
+  .feature-title {
+    color: #1f2937; /* gray-800 */
+    margin: 1rem 0;
+  }
+  
+  .feature-description {
+    color: #6b7280; /* gray-500 */
+    line-height: 1.6;
+  }
+  
+  /* Animation for cards on load */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .feature-card {
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+  
+  .feature-card:nth-child(1) { animation-delay: 0.1s; }
+  .feature-card:nth-child(2) { animation-delay: 0.2s; }
+  .feature-card:nth-child(3) { animation-delay: 0.3s; }
+  .feature-card:nth-child(4) { animation-delay: 0.4s; }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .features-container {
+      padding: 1rem;
+    }
+    
+    .feature-card {
+      margin-bottom: 1rem;
+    }
+  }
