@@ -8,7 +8,7 @@ const BeachSerenity = () => {
         <div className="serenity-grid">
           <div className="serenity-image-container">
             <img
-              src="https://media.myboutiquehotel.com//storage/mbhmag/per-aquum.jpg"
+              src="http://sea-side-beach-hotel.kamari.top-hotels-gr.com/data/Imgs/OriginalPhoto/4193/419332/419332401/seaside-beach-hotel-kamari-kamari-santorini-img-1.JPEG"
               alt="AquaLuxe Beach"
               className="serenity-image"
             />
